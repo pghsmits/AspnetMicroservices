@@ -11,13 +11,13 @@ namespace Eventbus.Messages.Events
             CreationDate = DateTime.UtcNow;
         }
 
-        public IntegrationBaseEvent(Guid Id, DateTime createDate)
+        public IntegrationBaseEvent(Guid id, DateTime createDate)
         {
-            Id = Id;
+            Id = id;
             CreationDate = createDate;
         }
 
-        public Guid Id { get; set; }
+        public Guid Id { get; private set; }
 
         public DateTime CreationDate { get; private set; }
     }

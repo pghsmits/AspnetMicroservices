@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Eventbus.Messages.Events
+﻿namespace Eventbus.Messages.Events
 {
-    public class BasketCheckoutEvent :IntegrationBaseEvent
+    public class BasketCheckoutEvent : IntegrationBaseEvent
     {
         public string UserName { get; set; }
         public decimal TotalPrice { get; set; }
